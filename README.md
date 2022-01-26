@@ -1,4 +1,5 @@
 # 机器视觉学习项目
+[![yKByJ.png](https://s1.328888.xyz/2022/01/26/yKByJ.png)](https://imgloc.com/image/yKByJ)
 >一些好玩的机器视觉项目
 >一些好玩的机器视觉项目，基于OpenCV
  - 👉都是自己慢慢摸索加不断琢磨敲出来的
