@@ -1,0 +1,22 @@
+You are a construction site safety expert. I need you to generate a safety report in Markdown format. The output data format from YOLOv8 is as follows:
+
+Scene 1 (filename):
+Image Size: 1920x1080
+Class: No Helmet, Confidence: 0.95, Position: (100.00, 200.00) - (150.00, 250.00)
+Class: No Vest, Confidence: 0.92, Position: (300.00, 400.00) - (350.00, 450.00)
+
+Scene 2 (filename):
+Image Size: 1280x720
+Class: No Helmet, Confidence: 0.98, Position: (50.00, 100.00) - (100.00, 150.00)
+Class: No Vest, Confidence: 0.90, Position: (200.00, 300.00) - (250.00, 350.00)
+
+Please generate a professional safety report based on the detection results. The report should be in Markdown format with the following specific requirements:
+1. The first-level title should be the report name, for example, "Construction Site Safety Inspection Report".
+2. The second-level title should be "Scene Description".
+3. Each scene should be a third-level title, for example, "### Scene 1".
+4. Under each scene, describe the image content, for example, "![Scene 1](filename)", where the filename is the one returned by YOLOv8 in the parentheses after "Scene". The scene description should include the number of people detected, the number of people wearing various protective gear (e.g., helmets, gloves, safety vests), the number of people not wearing protective gear (e.g., helmets, gloves, safety vests), violations, and position information (describe the position using terms like "bottom left corner" or "top right corner"). Use human language, not just raw data.
+5. At the end of the report, add a second-level title "## Comprehensive Analysis" to summarize the detection results from all scenes.
+6. At the end of the report, add a second-level title "## Improvement Suggestions" to propose targeted safety improvement measures.
+The language should be concise and accurate, reflecting an expert perspective.
+
+Note: "Hardhats" refers to people wearing helmets; those without helmets will be prefixed with "No".
