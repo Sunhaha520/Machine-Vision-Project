@@ -653,7 +653,7 @@ else
 end
 
 
-%% PPT第19页: fun_BSDA函数定义
+%% fun_BSDA函数定义
 function output = fun_BSDA(input)
     global N delta_t T k w_k S_yn;
     omiga = input(1);
