@@ -236,7 +236,7 @@ ND = abs(x_opt - actual_values) ./ SD;
 % 正态分布PDF函数（替代normpdf，不需要统计工具箱）
 normal_pdf = @(x, mu, sigma) (1./(sigma * sqrt(2*pi))) .* exp(-0.5 * ((x - mu)./sigma).^2);
 
-% PPT第9页: 高斯分布图（左上 - omega，右上 - zeta）
+% 高斯分布图（左上 - omega，右上 - zeta）
 figure('Position', [100, 600, 1000, 400]);
 
 % 第1个图：自然频率(ω)的高斯分布（左）
@@ -251,7 +251,7 @@ title('高斯分布曲线');
 xlabel('x');
 ylabel('概率密度');
 
-% 第2个图：阻尼比(ζ)的高斯分布（右）
+% 阻尼比(ζ)的高斯分布
 subplot(1,2,2);
 mu2 = x_opt(2);
 sigmaPDF2 = SD(2);
@@ -263,10 +263,10 @@ title('高斯分布曲线');
 xlabel('x');
 ylabel('概率密度');
 
-% PPT第10页: 高斯分布图（左 - S_f0，右 - sigma_e^2）
+% 高斯分布图（左 - S_f0，右 - sigma_e^2）
 figure('Position', [100, 200, 1000, 400]);
 
-% 第3个图：白噪声谱强度(S_f0)的高斯分布（左）
+% 白噪声谱强度(S_f0)的高斯分布
 subplot(1,2,1);
 mu3 = x_opt(3);
 sigmaPDF3 = SD(3);
@@ -278,7 +278,7 @@ title('高斯分布曲线');
 xlabel('x');
 ylabel('概率密度');
 
-% 测量噪声方差(σ_e^2)的高斯分布（右）
+% 测量噪声方差(σ_e^2)的高斯分布
 subplot(1,2,2);
 mu4 = x_opt(4);
 sigmaPDF4 = SD(4);
